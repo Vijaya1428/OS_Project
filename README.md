@@ -34,3 +34,16 @@ void prod(pthread_t a)
 	return p;
 }
 
+void cons(pthread_t a)
+{
+	int j = 0;
+
+	printf("\n\n Buffer:");
+	for(j=0 ; j<= buffer_pos ; ++j)
+	{
+		printf("%d ",*(buffer+j));
+	}
+	
+}
+
+
